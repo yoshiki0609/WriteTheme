@@ -1,0 +1,503 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  font-size: 15px;
+  font-family: Georgia, 游明朝, YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  height: 152px;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.left h1 {
+  font-size: 36px;
+  color: #111;
+  line-height: 44px;
+}
+
+.left p {
+  font-size: 18px;
+  color: #777;
+}
+
+.right {
+  display: flex;
+}
+
+.right a {
+  font-size: 16px;
+}
+
+.right .nav_contents {
+  display: flex;
+  margin-top: 40px;
+}
+.right li {
+  padding: 0 15px;
+}
+
+.fas {
+  margin-left: 10px;
+}
+
+.nav_contents {
+  padding-right: 180px;
+}
+
+.nav_contents li {
+  position: relative;
+}
+
+.nav_contents li a:hover {
+  color: #c49029;
+}
+
+.nav_contents li:hover ul li {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav_contents li ul {
+  position: absolute;
+  top: 45px;
+  left: -5px;
+  height: 0;
+  visibility: hidden;
+}
+
+.nav_contents li a {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.nav_contents li li {
+  width: 160px;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 20px 0 20px;
+  box-shadow: 0.5 0.5px #f0f0f0;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.search_wrapper {
+  display: inline-block;
+  margin-top: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.search {
+  height: 24px;
+  width: 0px;
+  border: none;
+  background: url(images/iconfinder_search_172546.png) no-repeat;
+  background-size: contain;
+  padding-left: 30px;
+  position: absolute;
+  right: 0;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.search:focus {
+  width: 140px;
+  border: 1px solid #e0e0e0;
+  cursor: text;
+}
+
+.top_wrapper {
+  height: 780px;
+}
+
+.top_wrapper p {
+  font-size: 27px;
+  color: #777;
+  padding-top: 90px;
+}
+
+.displayNone {
+  display: block;
+}
+
+.main_wrapper {
+  height: 1440px;
+}
+
+.main_wrapper .container {
+  border-bottom: 1px solid #ccc;
+}
+
+.text_box {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.date {
+  margin-right: 220px;
+  padding-top: 20px;
+  opacity: 0.5;
+}
+
+.date:hover {
+  opacity: 1;
+}
+
+.date a {
+  font-size: 16px;
+  color: #999;
+}
+
+.text_area {
+  width: 700px;
+  display: inline-block;
+}
+
+.text_heading {
+  padding-bottom: 20px;
+  color: #111;
+  font-size: 22px;
+}
+
+.text_heading a:hover {
+  color: #c49029;
+}
+
+.text {
+  font-size: 17px;
+  color: #666;
+}
+
+.page_list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 130px;
+}
+
+.page_list a {
+  font-size: 17px;
+  color: #777;
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid #ccc;
+  margin-left: 6px;
+  opacity: 0.7;
+}
+
+.page_list a:hover {
+  opacity: 1;
+}
+
+.first_list {
+  background-color: #eee;
+}
+
+.profile_wrapper {
+  height: 460px;
+}
+
+.profile_wrapper .container {
+  height: 380px;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile {
+  width: 300px;
+}
+
+.icon {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.profile_heading {
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px 0 40px 20px;
+}
+
+.fab {
+  color: #666;
+  opacity: 0.6;
+  padding-right: 10px;
+  transition: 0.5s;
+}
+
+.fab:hover {
+  opacity: 1;
+}
+
+.profile_text {
+  width: 260px;
+}
+
+.sub_menu {
+  display: flex;
+}
+
+.sub {
+  width: 190px;
+  margin-right: 40px;
+}
+
+.sub_heading {
+  font-size: 15px;
+  padding-bottom: 35px;
+}
+
+.sub_text {
+  font-size: 16px;
+  color: #666;
+}
+
+.sub a {
+  display: inline-block;
+  font-size: 17px;
+  color: #666;
+  border-bottom: 1px solid #666;
+}
+
+.sub a:hover {
+  color: #c49029;
+}
+
+.sub1 p {
+  font-size: 15px;
+  color: #666;
+  padding-bottom: 10px;
+}
+
+.sub2 li {
+  padding-bottom: 10px;
+}
+
+.sub_input {
+  margin-top: 85px;
+  height: 40px;
+  width: 220px;
+  border: 1px solid #e0e0e0;
+}
+
+::placeholder {
+  padding-left: 5px;
+  color: #777;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+footer {
+  height: 115px;
+}
+
+.footer_icon {
+  float: left;
+}
+
+.footer_text {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.footer_text a {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.footer_text a:hover {
+  opacity: 1;
+}
